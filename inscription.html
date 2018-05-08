@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Page Inscription</title>
+	      
+</head>
+<body>
+                 <script >
+                 	 function myfun(argument) {
+                 	 	var pass =document.getElementById('mdp').value;
+                 	 	var confirmpass =document.getElementById('mdp2').value;
+                 	 	var eml =document.getElementById('email').value;
+                 	 	var confirmeml =document.getElementById('confirm-eml').value;
+
+                 	 	    if (pass.length<8) {
+                                 document.getElementById('message').innerHTML="**vous de devez entrer au moins 8 caractéres";
+                                 return false;
+                 	 	      }
+                 	 	  if (pass!=confirmpass) {
+                 	 	  	document.getElementById('message').innerHTML="Les deux Mots  de passe ne sont pas identiques";
+                 	 	  	return false;
+                 	 	  }    
+                                     if (eml!=confirmeml) {
+                 	 	  	document.getElementById('messages').innerHTML="Les deux adresses e-mails ne sont pas identiques";
+                 	 	  	return false;
+                 	 	  }    
+
+                 	 
+
+                 	 }
+
+
+                 	
+                 </script>
+
+
+
+               <P >Page Inscription</P>
+
+  <hr>
+  <br>
+  <br>
+     
+
+</body>
+</html>
